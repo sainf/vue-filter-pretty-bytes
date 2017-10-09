@@ -1,0 +1,25 @@
+{
+  "name": "vue-filter-pretty-bytes",
+  "version": "0.0.1",
+  "description": "Vue 2 Filter to prettify bytes",
+  "main": "vue-filter-pretty-bytes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sainf/vue-filter-pretty-bytes.git"
+  },
+  "keywords": [
+    "vue",
+    "filter",
+    "pretty",
+    "bytes"
+  ],
+  "author": "sainf.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sainf/vue-filter-pretty-bytes/issues"
+  },
+  "homepage": "https://github.com/sainf/vue-filter-pretty-bytes#readme"
+}
