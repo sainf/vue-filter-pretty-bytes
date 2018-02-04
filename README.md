@@ -25,6 +25,14 @@ Vue.use(require('vue-filter-pretty-bytes'))
 ```
 Return: 15.36 MB
 
+#### everywhere like methods, etc...
+
+```
+this.$options.filters.prettyBytes(15364878)
+
+```
+
+
 ### Options
 
 Decimals and [KiB](https://en.wikipedia.org/wiki/Kibibyte)

@@ -6,7 +6,7 @@
 
     /**
      *
-     * @param {number} bytes
+     * @param {Number} bytes
      * @param {Number} decimal
      * @param {Boolean} kib
      *
