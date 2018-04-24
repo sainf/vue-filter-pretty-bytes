@@ -12,7 +12,8 @@
      *
      */
 
-     Vue.filter('prettyBytes', function (bytes, decimals, kib = false) {
+     Vue.filter('prettyBytes', function (bytes, decimals, kib) {
+       kib = kib || false
        if (bytes === 0) return '0 Bytes'
        if (isNaN(parseFloat(bytes)) && !isFinite(bytes)) return 'Not an number'
        const k = kib ? 1024 : 1000
