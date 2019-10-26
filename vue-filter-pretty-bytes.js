@@ -7,7 +7,7 @@
     /**
      *
      * @param {Number} bytes
-     * @param {Number} decimal
+     * @param {Number} decimals
      * @param {Boolean} kib
      *
      */
@@ -18,7 +18,7 @@
        if (isNaN(parseFloat(bytes)) && !isFinite(bytes)) return 'Not an number'
        const k = kib ? 1024 : 1000
        const dm = decimals || 2
-       const sizes = kib ? ['Bytes', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB'] : ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
+       const sizes = kib ? ['Bytes', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB', 'BiB'] : ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB', 'BB']
        const i = Math.floor(Math.log(bytes) / Math.log(k))
 
        return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i]
