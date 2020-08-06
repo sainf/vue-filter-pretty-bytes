@@ -48,3 +48,9 @@ KiB - Boolean
 {{ 15364878 | prettyBytes(1, true) }}
 ```
 Return: 14.7 MiB
+
+Max Unit
+```
+{{ 15364878 | prettyBytes(1, true, 'KiB') }}
+```
+Return: 15004.8 KiB
