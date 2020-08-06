@@ -1,7 +1,7 @@
 # vue-filter-pretty-bytes
 Vue 2 Filter to prettify bytes
 
-### Install
+## Install
 
 Available through npm as `vue-filter-pretty-bytes`, or include as an inline script.
 
@@ -18,7 +18,7 @@ Vue.use(require('vue-filter-pretty-bytes'))
 ```
 
 
-### Usage
+## Usage
 
 ```
 {{ 15364878 | prettyBytes }}
@@ -33,24 +33,39 @@ this.$options.filters.prettyBytes(15364878)
 ```
 
 
-### Options
+## Options
 
 Decimals and [KiB](https://en.wikipedia.org/wiki/Kibibyte)
 
-Decimals - Integer
+### Decimals - Integer
 ```
 {{ 15364878 | prettyBytes(1) }}
 ```
 Return: 15.4 MB
 
-KiB - Boolean
+### KiB - Boolean
 ```
 {{ 15364878 | prettyBytes(1, true) }}
 ```
 Return: 14.7 MiB
 
-Max Unit
+### Max Unit
+
+#### Normal
+```
+{{ 15364878 | prettyBytes(1, false, 'KB') }}
+```
+
+Options: 'Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB', 'BB'
+
+Return: 15364.9 KB
+
+
+#### KiB
 ```
 {{ 15364878 | prettyBytes(1, true, 'KiB') }}
 ```
+
+Options: 'Bytes', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB', 'BiB'
+
 Return: 15004.8 KiB
