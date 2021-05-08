@@ -1,6 +1,22 @@
 # vue-filter-pretty-bytes
 Vue 2 Filter to prettify bytes
 
+### Vue 3 Notes
+Vue 3 remove filters, and thats a good thing!!!
+
+Use any JS script, recomended: pretty-bytes: https://www.npmjs.com/package/pretty-bytes
+
+```javascript
+<script setup lang="ts">
+import prettyBytes from 'pretty-bytes'
+</script>
+<template>
+  <div>
+    {{ prettyBytes(51254) }}
+  </div>
+</template>
+```
+
 ## Install
 
 Available through npm as `vue-filter-pretty-bytes`, or include as an inline script.
